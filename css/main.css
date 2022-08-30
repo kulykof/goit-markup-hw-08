@@ -298,12 +298,8 @@ body {
 
 .form__input:focus,
 .form__input:hover,
-.form__group:focus,
-.form__group:hover,
 .form__comment:focus,
-.form__comment:hover,
-.form__label-checkbox:focus,
-.form__label-checkbox:hover {
+.form__comment:hover {
   border: 1px solid var(--accent-color);
 }
 
