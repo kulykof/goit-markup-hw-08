@@ -415,6 +415,7 @@ body {
 
 .header {
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
@@ -490,12 +491,17 @@ body {
   display: none;
 }
 
+.icon-menu {
+  fill: var(--main-page-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .icon-menu:hover, .icon-menu:focus {
   fill: var(--accent-color);
 }
 
 .icon-cross {
   fill: var(--main-page-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-cross:hover, .icon-cross:focus {
   fill: var(--accent-color);
@@ -745,9 +751,10 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-socials__link:visited {
-  color: var(--accent-color);
+  color: var(--secondary-accent-color);
 }
 
 .header-socials__item:not(:last-child) {
@@ -755,10 +762,6 @@ body {
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   transform: border rotate(90deg);
-}
-
-.header-portfolio {
-  border-bottom: 1px solid #ececec;
 }
 
 .hero {
@@ -1480,7 +1483,6 @@ body {
 
 .projects__item {
   width: 100%;
-  border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -1510,6 +1512,7 @@ body {
 
 .card__meta {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .card__title {
@@ -1542,7 +1545,7 @@ body {
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
   transform: translateY(101%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__item:hover .card__overlay {
   transform: translateX(0%);

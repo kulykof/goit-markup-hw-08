@@ -11,7 +11,6 @@
 
 .projects__item {
     width: 100%;
-    border: 1px solid #eeeeee;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width: 768px) {
@@ -40,6 +39,7 @@
 
 .card__meta {
     padding: 20px 24px;
+    border: 1px solid #eeeeee;
 }
 
 .card__title {
@@ -72,7 +72,7 @@
     background: rgba(33, 150, 243, 0.9);
     opacity: 0;
     transform: translateY(101%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .projects__item:hover & {
     transform: translateX(0%);
